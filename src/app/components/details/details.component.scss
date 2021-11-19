@@ -1,0 +1,45 @@
+@import '../../../assets/styles/variables';
+
+.details__container {
+  flex-direction: column;
+  justify-content: center;
+
+  &.opened {
+    max-height: 200px;
+    margin: 2rem;
+    display: block;
+  }
+
+  &.closed {
+    margin: 0;
+    visibility: hidden;
+    max-height: 0;
+  }
+}
+
+.details-title__container {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.details__description {
+  display: flex;
+  align-items: center;
+}
+
+.details-widget__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.address-property {
+  color: $secondary_color;
+}
+
+.details-dot__divider {
+  margin: 0px 5px;
+  width: 3px;
+  height: 3px;
+  background-color: #bcbcbc;
+  border-radius: 50%;
+}

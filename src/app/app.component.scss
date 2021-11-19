@@ -1,0 +1,24 @@
+@media only screen and (max-device-width: 768px) {
+  app-details {
+    position: fixed;
+    background: #FFFFFF;
+    width: 100%;
+    bottom: 0;
+    z-index: 10000;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  app-details {  
+    display: none;  
+  }
+}
+
+navigation {
+  position: absolute;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  display: block;
+  z-index: 10000;
+}

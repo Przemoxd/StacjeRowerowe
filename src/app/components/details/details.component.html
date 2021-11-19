@@ -1,0 +1,16 @@
+<div #details class="details__container" [ngClass]="!!station ? 'opened' : 'closed'">
+  <div *ngIf="station">
+    <div class="details-title__container">
+      {{station.properties.label}}
+    </div>
+    <div class="details__description">
+      <div class="details-property__description bold-text">{{distanceFromCurrentPosition}}</div>
+      <div class="details-dot__divider"></div>
+      <div class="details-property__description address-property">{{address}}</div>
+    </div>
+    <div class="details-widget__container">
+      <widget [quantity]="station.properties.bikes" [type]="widgetType.BIKE_WIDGET"></widget>
+      <widget [quantity]="station.properties.free_racks" [type]="widgetType.PLACE_WIDGET"></widget>
+    </div>
+  </div>
+</div>

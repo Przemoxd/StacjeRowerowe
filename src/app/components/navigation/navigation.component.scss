@@ -1,0 +1,18 @@
+@media only screen and (max-device-width: 768px) {
+  .navigation__container {
+    background-color: #000000;
+    align-items: center;
+    display: flex;
+    height: 50px;
+  }
+
+  .back__icon {
+    display: block;
+    margin-left: 2rem;
+    width: 30px;
+    height: 20px;
+    background-image: url('../../../assets/images/back.png');
+    background-repeat: no-repeat;
+    background-size: 30px 20px;
+  }
+}

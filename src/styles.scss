@@ -1,0 +1,58 @@
+@import url('leaflet/dist/leaflet.css');
+@import "assets/styles/variables";
+
+body,
+html {
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.bicycle-station__icon {
+  background-color: white;
+  border-radius: 50%;
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('./assets/images/Bike.svg');
+}
+
+.current-position__icon {
+  background-color: #003fff;
+  border-radius: 50%;
+  background-size: 10px 10px;
+  box-shadow: 0px 0px 0px 5px rgba(0, 63, 255, 0.3);
+}
+
+
+.bikes__icon {
+  background-image: url('./assets/images/Bike.svg');
+  background-size: 18px;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.places__icon {
+  background-image: url('./assets/images/Lock.svg');
+  background-size: 18px;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  .leaflet-popup {
+    visibility: hidden;
+  }
+}
+
+.leaflet-popup-content-wrapper {
+  min-width: 350px;
+}
